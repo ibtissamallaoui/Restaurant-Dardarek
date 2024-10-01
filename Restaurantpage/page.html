@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DarDarek</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" defer></script>
+
+</head>
+
+<body>
+        <!-- Header start -->
+        <header>
+                <div id="headerbar">
+                        <img src="./images/Logo.png" alt="DAR DAREK">
+                        <nav>
+                                <ul>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#menu">Menu</a></li>
+                                        <li><a href="#gallery">Gallery</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+
+
+                                </ul>
+                        </nav>
+                </div>
+                <!-- content start -->
+                <div class="content">
+                        <h1>Welcome to <span class="dardarek">DarDarek</span> </h1>
+                        <p>A Taste of Moroccan Luxury. Dive into extravagance and savor the essence of Moroccan cuisine.
+                        </p>
+                        <a href="#" class="btn btn-reservation">Reserve a table</a>
+
+
+                        <div id="reservation-modal" class="modal">
+                                                        <div class="modal-content">
+                                                                <span class="close"
+                                                                        onclick="closeReservationModal()">&times;</span>
+                                                                <h2>Reserve a Table</h2>
+                                                                <form id="reservation-form">
+                                                                        <label for="full-name">Full Name:</label>
+                                                                        <input type="text" id="full-name"
+                                                                                name="full-name" required>
+
+                                                                        <label for="reservation-type">Type of
+                                                                                Reservation:</label>
+                                                                        <select id="reservation-type"
+                                                                                name="reservation-type" required>
+                                                                                <option value="Lunch">Lunch</option>
+                                                                                <option value="Dinner">Dinner</option>
+                                                                                <option value="Special Event">Special
+                                                                                        Event</option>
+                                                                        </select>
+
+                                                                        <label for="reservation-date">Date:</label>
+                                                                        <input type="date" id="reservation-date"
+                                                                                name="reservation-date" required>
+
+                                                                        <label for="num-people">Number of
+                                                                                People:</label>
+                                                                        <input type="number" id="num-people"
+                                                                                name="num-people" min="1" required>
+
+                                                                        <button type="submit"
+                                                                                class="btn btn-submit">Submit</button>
+                                                                </form>
+                                                        </div>
+                                                </div>
+                </div>
+                <!-- content end -->
+
+        </header>
+        <!-- Header End -->
+
+
+        <!-- main start -->
+        <main>
+                <!-- about start -->
+                <section id="about">
+                        <div class="container">
+                                <div class="title">
+                                        <h2>DarDarek History</h2>
+                                        <p>More than 25+ years of experience</p>
+                                </div>
+
+                                <div class="about-content">
+                                        <div>
+                                                <p>Discover Dardarek, your luxurious Moroccan escape. Named for the
+                                                        Moroccan phrase meaning
+                                                        "make yourself at home," our restaurant embodies the essence of
+                                                        Moroccan hospitality.
+                                                        Indulge in a culinary journey celebrating vibrant flavors and
+                                                        rich traditions, where
+                                                        every dish tells a story of passion and heritage. Join us for an
+                                                        unforgettable dining
+                                                        experience, where elegance meets authenticity.
+
+                                                </p>
+                                                <a href="learnmore.html"  target="_blank" class="btn btn-learnmore">LEARN MORE</a>
+                                                
+
+                                        </div>
+                                        <img src="./images/about.png" alt="restaurant image">
+                                </div>
+
+
+                        </div>
+                </section>
+                <!-- about end -->
+                <!-- Offers start   -->
+
+                <section id="specialities">
+                        <div class="container">
+                                <div class="title">
+                                        <h2>Our Specialities</h2>
+                                        <p>Experience our curated Moroccan specialties, each a culinary masterpiece.</p>
+                                </div>
+                                <div class="special-items">
+                                        <div>
+                                                <img src="./images/1.png" alt="beef tagine">
+                                                <div>
+                                                        <h3>Beef Tagine</h3>
+                                                        <p>Savory slow-cooked beef with aromatic spices, dried fruits,
+                                                                and almonds.</p>
+                                                        <p class="price">190.0dh</p>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <img src="./images/2.png" alt="Pastilla">
+                                                <div>
+                                                        <h3>Pastilla</h3>
+                                                        <p>Flaky pastry filled with chicken, almonds, and aromatic
+                                                                herbs.</p>
+                                                        <p class="price">120.0dh</p>
+                                                </div>
+
+                                        </div>
+                                        <div>
+                                                <img src="./images/3.png" alt="Tanjia">
+                                                <div>
+                                                        <h3>Tanjia</h3>
+                                                        <p>Tender meat marinated in secret spices, slow-cooked to
+                                                                perfection.</p>
+                                                        <p class="price">280.0dh</p>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </section>
+
+                <!-- Offers end   -->
+
+                <!-- Menu start -->
+                <section id="menu">
+                        <div class="container">
+                                <div class="title">
+                                        <h2>Our Special Menu</h2>
+                                        <p>Indulge Your Senses with Our Culinary Delights</p>
+                                </div>
+                                <div class="menu-items">
+                                        <div class="menu-items-left">
+                                                <!-- inputs start -->
+                                                <div class="inputs">
+                                                        <div class="title">
+                                                                <h3>The Inputs :</h3>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <div class="item-name">
+                                                                        <p>Selection of Briouates with cheese,
+                                                                                vegetables and
+                                                                                kefta</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>140dh</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <div class="item-name">
+                                                                        <p>Sweet pastilla with chicken, eggs and almonds
+                                                                        </p>
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>140dh</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <div class="item-name">
+                                                                        <p>Vermicelli and seafood pastilla</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>190dh</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <div class="item-name">
+                                                                        <p>Moroccan salad delight</p>
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>140dh</p>
+                                                                </div>
+                                                        </div>
+
+
+                                                        <div class="menu-item">
+                                                                <!-- Add Plate 5 here -->
+                                                                <div class="item-name">
+                                                                        <p>Assorted Briouates</p> <!-- ADD THIS -->
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>150.0dh</p> <!-- ADD THIS -->
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <!-- Add Plate 6 here -->
+                                                                <div class="item-name">
+                                                                        <p>Stuffed Bell Peppers</p> <!-- ADD THIS -->
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>160.0dh</p> <!-- ADD THIS -->
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <!-- Add Plate 7 here -->
+                                                                <div class="item-name">
+                                                                        <p>Potato Croquettes</p> <!-- ADD THIS -->
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>130.0dh</p> <!-- ADD THIS -->
+                                                                </div>
+                                                        </div>
+                                                        <div class="menu-item">
+                                                                <!-- Add Plate 8 here -->
+                                                                <div class="item-name">
+                                                                        <p>Cheese Filled Zaalouk Rolls</p>
+                                                                        <!-- ADD THIS -->
+                                                                </div>
+                                                                <div class="price">
+                                                                        <p>140.0dh</p> <!-- ADD THIS -->
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- inputs end -->
+
+                                        <!-- dishes start -->
+                                        <div class="dishes">
+                                                <div class="title">
+                                                        <h3>The dishes :</h3>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Chicken tagine with lemon and saffron</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>180dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Tajine of beef & vegetables Berber style.</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>190dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Beef tagine with prunes</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>190dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Chicken tagine with caramelized pears</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>180dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Thin seffa semolina with chicken & onions, dried
+                                                                        fruit</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>190dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Royal Couscous with lamb, beef and Merguez sausages
+                                                                </p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>260dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Lamb Shoulder Mechoui (2 people)</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>660dh</p>
+                                                        </div>
+                                                </div>
+
+
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Chicken Tagine with Preserved Lemons and Olives</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>180.0dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Moroccan Lamb Tagine with Apricots and Almonds</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>220.0dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Couscous Royale with Lamb, Chicken, and Vegetables
+                                                                </p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>240.0dh</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- dishes finish -->
+                                </div>
+
+                                <div class="menu-items-right">
+                                        <!-- desserts start -->
+                                        <div class="desserts">
+                                                <div class="title">
+                                                        <h3>Desserts :</h3>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Oranges salad - almonds and dates - Orange flower ice
+                                                                        cream</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>75dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Pastilla with orange blossom milk and almond chips
+                                                                </p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>95dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Plate of Moroccan pastries</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>85dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Homemade ice creams and sorbets (vanilla-orange
+                                                                        blossom-amlou)</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>85dh</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Rosewater Rice Pudding with Pistachios</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>90dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Almond Briouats with Honey</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>80dh</p>
+                                                        </div>
+                                                </div>
+                                                <div class="menu-item">
+                                                        <div class="item-name">
+                                                                <p>Orange Blossom Scented Dates</p>
+                                                        </div>
+                                                        <div class="price">
+                                                                <p>85dh</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <!-- desserts finish -->
+                                </div>
+                        </div>
+                        <button class="btn">EXPLORE THE FULL MENU</button>
+
+                        </div>
+                </section>
+                <!-- Menu end   -->
+
+
+                <!-- Daytime start   -->
+                <section id="daytime">
+                        <div class="container">
+                                <div class="daytime-items">
+                                        <div class="daytime-item">
+                                                <img src="./images/breakfast.png" alt="breakfast">
+                                                <h3>Breakfast</h3>
+                                                <p>8:00 am to 12:00 pm</p>
+                                        </div>
+                                        <div class="daytime-item">
+                                                <img src="./images/lunch.png" alt="lunch">
+                                                <h3>Lunch</h3>
+                                                <p>12:00 pm to 18:00 pm</p>
+                                        </div>
+                                        <div class="daytime-item">
+                                                <img src="./images/dinner.png" alt="dinner">
+                                                <h3>Dinner</h3>
+                                                <p>21:00 am to 1:00 am</p>
+                                        </div>
+                                        <div class="daytime-item">
+                                                <img src="./images/dessert.png" alt="dessert">
+                                                <h3>Desserts</h3>
+                                                <p>All day</p>
+                                        </div>
+
+
+                                </div>
+                        </div>
+
+
+                </section>
+
+                <!-- Daytime end   -->
+                <!-- Gallery start   -->
+                <section id="gallery">
+                        <div class="container">
+                                <h2>Our Restaurant Gallery</h2>
+                                <div class="img-gallery">
+                                        <img src="./images/g1.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g1.png')">
+                                        <img src="./images/g2.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g2.png')">
+                                        <img src="./images/g3.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g3.png')">
+                                        <img src="./images/g4.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g4.png')">
+                                        <img src="./images/g5.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g5.png')">
+                                        <img src="./images/g6.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g6.png')">
+                                        <img src="./images/g7.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g7.png')">
+                                        <img src="./images/g8.png" alt="restaurant image 1"
+                                                onclick="openModal('./images/g8.png')">
+
+
+                                </div>
+                        </div>
+                </section>
+                <!-- Gallery end   -->
+
+
+
+
+
+
+                <!-- contact start   -->
+                <section id="contact">
+                        <div class="container">
+                                <div class="contact-content">
+                                        <div class="contact-info">
+                                                <div>
+                                                        <h3>ADRESSE</h3>
+                                                        <p> <i class="fa-solid fa-location-dot"></i> Asala street,
+                                                                Marrakesh
+                                                                40000, Morocco</p>
+                                                        <p><i class="fa-solid fa-phone"></i> Phone: +212 (0) 534 56 78
+                                                        </p>
+                                                        <P><i class="fa-regular fa-envelope"></i>
+                                                                Restauration@DarDarek.com </P>
+                                                </div>
+                                                <div>
+                                                        <h3>WORKING HOURS</h3>
+                                                        <p>8:00 am to 12:00 am on weekdays</p>
+                                                        <p>10:00 am to 2:00 am on weekends</p>
+
+                                                </div>
+                                                <div>
+                                                        <h3>FOLLOW US</h3>
+                                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                                                </div>
+
+                                        </div>
+                                        <form id="contact-form">
+                                                <input type="text" name="Name" id="Name" placeholder="Full Name"
+                                                        required>
+                                                <input type="email" name="Email" id="Email" placeholder="Email Adress"
+                                                        required>
+                                                <input type="text" name="Subject" id="Subject" placeholder="Subject"
+                                                        required>
+                                                <textarea name="Message" id="Message" cols="30" rows="5"
+                                                        placeholder="Message"></textarea>
+                                                <button type="submit" class="btn">SEND MESSAGE</button>
+
+                                        </form>
+                                </div>
+                        </div>
+
+
+                </section>
+                <!-- contact end   -->
+        </main>
+
+        <footer id="footer">
+                <p>Copyright &copy; 2024 All rights reserved | Made by <b> <a href="https://AllaouiIbtissam.com"
+                                        target="_blank">Allaoui Ibtissam</a></b> </p>
+        </footer>
+
+
+
+
+        <div id="myModal" class="modal">
+                <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modalImage" src="" alt="Image agrandie">
+                </div>
+        </div>
+
+
+</body>
+
+
+</html>

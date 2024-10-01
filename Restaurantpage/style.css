@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+/* reset */
+ul {
+    list-style-type: none;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;/* mn about o contact l te7t */
+
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    /* Specify Playfair Display as the font family */
+
+}
+/*Utility classes*/
+.btn{/*All buttons*/
+
+    display: inline-block;
+    padding:15px 30px;
+    font-family: 'Playfair Display', serif;
+}
+.price{
+    color: #B8860B;
+}
+/* header start */
+
+
+header {
+    height: 100vh;
+    background: url('./images/background.png')center center/cover no-repeat;
+    position: relative;
+}
+
+header::before {
+    /*   It allows us to add additional content or styling to the header. */
+
+    content: '';
+    /* no content inserted before the header element*/
+    position: absolute;
+    top: 0;
+    /* ensure that the top-left corner of the pseudo-element is positioned exactly at the top-left corner of the <header> element*/
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+header *{
+    z-index:10;/*is like giving each paper a number that determines its position in the stack. The higher the number, the closer it is to the top of the stack. but since theres no other layounts we can bare with 10 or even 1 next layout want to be higher we use a higher value*/
+}
+
+#headerbar {
+    display: flex;
+    /* elements of headerbar are next to each others */
+    justify-content: space-between;
+    /* between the content of headerbar */
+    align-items: center;
+
+}
+
+#headerbar img {
+    width: 100px;
+    margin-left: 100px
+}
+
+#headerbar ul {
+    display: flex;
+    margin-right: 100px;
+
+}
+
+#headerbar ul li a {
+    padding: 20px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#headerbar ul li a:hover {
+    border-bottom: solid #800020;
+
+}
+
+
+/* content start */
+header .content {
+    display: flex;
+    /* elements of headerbar are next to each others */
+    flex-direction: column;
+    justify-content: center;
+    /* between the content of headerbar */
+    align-items: center;
+    height: 75vh;
+
+}
+
+.content h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 60px;
+}
+
+.dardarek {
+    color: #B8860B;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.content p {
+    margin: 20px 0 40px;
+    color: white;
+    font-size: 24px;
+}
+.btn-reservation{
+    color:white;
+    border:1px solid white;
+    border-radius: 10px;
+}
+.btn-reservation:hover{
+background-color: #333333;
+}
+/* content End */
+/* header end */
+
+/* container start */
+.container{
+    max-width: 1100px;/*Without a maximum width, content could stretch out too far on larger screens, making it difficult to read*/
+    margin:auto ;    /* container in the middle  */
+}
+
+/* about start */
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about .title,
+#specialities .title,
+#menu .title{
+    text-align: center ;
+    margin: 4rem;/* sets a top, right, bottom, and left margin of 4rem .  it means you're setting a margin of 4 times the computed font size of the root element.*/
+}
+
+#about h2, 
+#specialities h2,
+#menu h2{
+    font-size:40px;
+    margin-bottom: 20px;
+    color: #B8860B;
+}
+#menu h2{
+    font-size:40px;
+    color: #B8860B;
+
+}
+
+
+
+
+#about .title p,
+#menu .title p{
+    font-size:14px;
+    color:#800020;
+    font-weight:600 ;
+}
+#about .about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width:400px;
+}
+#about .about-content p{
+    margin-right: 7rem;
+    font-weight :500px; 
+    line-height: 1.6;
+    color:#333333;
+}
+.btn-learnmore{
+    color:white;
+    background-color:#333333 ;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+}
+.btn-learnmore:hover{
+    background-color: #B8860B;
+    }
+/* about  end */
+
+/* specialities start */
+#specialities {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('./images/B1.png') center center/cover fixed;
+    align-items: center;
+}
+#specialities .title{
+    margin-top:0px;
+    margin-bottom: 30px;
+
+}
+#specialities .title p{
+    color:white;
+    font-weight: 500;
+}
+#specialities .special-items{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+#specialities .special-items img{
+    width: 260px;
+}
+#specialities .special-items p{
+    font-size: small;
+    font-weight: 100;
+    padding: 0 20px;
+}
+#specialities .special-items h3{
+margin-bottom:10px;
+}
+#specialities .price {
+margin-top: 10px;
+font-weight :900; 
+font-size: larger;
+font-weight:bolder !important;
+}
+/* specialities end   */
+
+/* Menu start   */
+#menu .title{
+    margin-bottom:0px;
+}
+#menu .title h3{
+    color: #800020;
+    margin-bottom: 25px;
+}
+#menu .title h2,
+#menu .title p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu{
+    padding:1rem 0; ;
+}
+#menu .menu-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+
+
+}
+#menu .item-name{
+    flex: 1;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+#menu .price{
+ margin-left: 20px;
+ flex-shrink: 0; 
+
+}
+#menu p{
+    display: flex;
+}
+#menu .inputs,
+#menu .dishes,
+#menu .desserts {
+    margin-bottom: 0; /* Reset margin bottom */
+}
+#menu .inputs h3,
+#menu .dishes h3,
+#menu .desserts h3{
+    font-size:27px;
+    color:#800020;
+    font-weight:bolder ;
+}
+
+#menu .menu-items-left  {
+    margin-right: 27px; /* Adjust spacing between left and right items */
+
+}
+#menu .btn{
+    color:white;
+    background-color:#333333 ;
+    border-radius: 10px;
+    margin: 80px auto 0;  
+    display:block;
+  border:none;
+  padding: 20px ;
+  padding-left: 30px; 
+  padding-right: 30px;
+  font-size:medium;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+#menu .btn:hover{
+    background-color: #B8860B;
+    }
+
+    /* desserts start */
+#menu .desserts .menu-item {
+    display: flex;
+    justify-content: space-between; /* Ensures price is displayed on the right */
+    align-items: center;
+    margin: 10px 0;
+}
+
+#menu .desserts .menu-item .item-name {
+    flex: 1;
+}
+
+#menu .desserts .menu-item .price {
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+/* desserts finish */
+
+/* Menu end   */
+/* container end */
+
+/* daytime start */
+#daytime{
+    background:url('./images/goldback.png')center center/cover fixed no-repeat;
+    color:white;
+    text-align: center;
+    
+}
+#daytime .daytime-items{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height:40vh;
+
+
+}
+#daytime img{
+    width: 65px;
+}
+#daytime .daytime-items h3{
+    font-size:20px;
+    margin:20px 0 10px;
+}
+#daytime .daytime-items p{
+    font-weight: smaller  ;
+}
+
+
+/* daytime end  */
+
+/* gallery start  */
+#gallery{
+    background: url('./images/B1.png') center center/cover fixed;
+    padding:8rem 0 6rem ;
+}
+#gallery h2{
+    color: white;
+    font-size:40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#gallery .img-gallery img{
+    width:232px;
+    height: 180px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#gallery .img-gallery img:hover{
+    opacity:1;
+}
+
+/* gallery end  */
+
+/* contact start  */
+#contact {
+    padding: 5rem 0;
+    background:white ;
+}
+#contact .container{
+max-width:900px ;
+}
+#contact .contact-content{
+    display: flex;
+justify-content:space-evenly ;
+align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+
+
+}
+
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color:#B8860B ;
+    margin-bottom: 10px;
+    font-weight:600 ;
+
+}
+#contact .contact-content .contact-info p{
+     color:#333333;
+}
+
+#contact .contact-content .contact-info i{
+    color:#800020;
+    margin-right: 5px;
+}
+
+#contact .contact-content .contact-info a i{
+    color: white;
+    background-color:#333333;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#contact .contact-content .contact-info a i:hover{
+    background-color: #800020;
+}
+form{
+    width :50%;
+}
+
+form input, textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin:20px 0 ;
+    border: none;
+    background-color: #EAD39C;
+    border-radius: 7px;
+  
+}
+input::placeholder, textarea::placeholder{
+    color: white;
+    font-family: 'Playfair Display', serif;
+
+}
+form .btn{
+    background: #333333;
+    color:white;
+    border-radius: 15px;
+    border: none;
+cursor: pointer;}
+form .btn:hover{
+    background-color:#800020;
+}
+
+/* contact end  */
+
+/* Footer start  */
+#footer {
+    background:#333333;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a{
+    color: white;
+}
+/* Footer end  */
+
+
+
+
+
+
+
+.learnmore-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header styles */
+#headerbar-l {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pour espacer le logo et la navigation */
+}
+
+#headerbar-l img {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+#headerbar-l nav ul {
+    display: flex;
+}
+
+#headerbar-l nav ul li {
+    margin: 0 20px;
+}
+
+#headerbar-l nav ul li a {
+    color: white;
+    font-weight: 600;
+}
+
+/* About section styles */
+#learnmore-about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#learnmore-about .learnmore-title h2 {
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+#learnmore-about .learnmore-content {
+    margin-bottom: 40px;
+}
+
+#learnmore-about .learnmore-content p {
+    margin-bottom: 20px;
+}
+
+#learnmore-about .learnmore-content ul {
+    margin-top: 20px;
+}
+
+#learnmore-about .learnmore-content ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    
+}
+
+.close {
+    color: #fff; /* White close icon */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc; /* Light gray close icon on hover */
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* ADD HERE: Reservation modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #888;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+#reservation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#reservation-form input,
+#reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#reservation-form button {
+    background-color: #800020;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reservation-form button:hover {
+    background-color: #B8860B;
+}
